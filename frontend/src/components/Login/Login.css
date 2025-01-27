@@ -1,0 +1,118 @@
+.login-wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-signup-link {
+    width: 100%;
+    background-color: #f2f3f8;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 14px;
+    margin-bottom: 10px;
+
+    & a {
+        text-decoration: none;
+        color: rgba(0, 0, 0, 0.712);
+    }
+}
+
+.signup-link {
+    border-radius: 5px;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    font-weight: 480;
+    color: rgba(0, 0, 0, 0.662);
+    padding: 5px 0px;
+    cursor: pointer;
+}
+
+.login-link {
+    text-align: center;
+    border-radius: 5px;
+    width: 100%;
+    display: inline-block;
+    padding: 5px 0px;
+    color: rgba(0, 0, 0, 0.662);
+    font-weight: 480;
+    cursor: pointer;
+}
+
+/* active class for login and signup link */
+.active {
+    color: black;
+    background-color: white;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.login-container {
+    border: 1px solid rgba(0, 0, 0, 0.064);
+    margin: 10px;
+    margin-top: 30px;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    max-width: 380px;
+    width: 100%;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+    & h3 {
+        font-weight: 550;
+    }
+
+    & p {
+        font-size: 14px;
+        color: rgba(0, 0, 0, 0.694);
+        margin-bottom: 15px;
+    }
+
+    & label {
+        font-weight: 500;
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+
+    & input {
+        width: 100%;
+        outline: none;
+        border: 1px solid rgba(0, 0, 0, 0.114);
+        padding: 8px 0px;
+        border-radius: 4px;
+        padding-left: 5px;
+        margin-bottom: 10px;
+    }
+}
+
+.login-btnn {
+    background-color: rgba(21, 21, 21, 0.9);
+    color: white;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+        background-color: black
+    }
+}
+
+#role {
+    width: 100%;
+    outline: none;
+    padding: 6px 8px;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.171);
+}

@@ -1,0 +1,52 @@
+.dashboard-wrapper {
+    display: flex;
+    align-items: start;
+    gap: 10px;
+    width: 100%;
+}
+
+.sales-container {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin: 30px;
+}
+
+.right-content {
+    width: 75%;
+    height: 89vh;
+    overflow: scroll;
+}
+.right-content::-webkit-scrollbar{
+    display: none;
+}
+
+.total-sales-box {
+    background-color: white;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 10px;
+    padding: 15px;
+    width: 180px;
+
+    & h2 {
+        color: #3e67c1;
+        font-weight: 520;
+        font-size: 20px;
+    }
+
+    & p {
+        color: black;
+        font-size: 15px;
+        font-weight: 510;
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width:750px) {
+
+    .right-content{
+        overflow: scroll;
+        width: 90%;
+    }
+}

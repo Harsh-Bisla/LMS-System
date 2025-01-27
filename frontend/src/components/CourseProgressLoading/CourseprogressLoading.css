@@ -1,0 +1,76 @@
+/* Skeleton Base Styles */
+.skeleton {
+    background-color: #e0e0e0;
+    /* Light gray */
+    border-radius: 4px;
+    animation: pulse 1.5s infinite ease-in-out;
+}
+
+@keyframes pulse {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.6;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Skeleton for Heading Section */
+.course-progress-section .progress-heading .skeleton-title {
+    height: 28px;
+    width: 50%;
+    margin-bottom: 10px;
+}
+
+.course-progress-section .progress-heading .skeleton-button {
+    height: 36px;
+    width: 150px;
+    margin-top: 10px;
+    border-radius: 8px;
+}
+
+/* Skeleton for Video Section */
+.video-box .skeleton-video {
+    width: 100%;
+    height: 240px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.video-box .skeleton-video-title {
+    height: 20px;
+    width: 70%;
+    margin: 10px 0;
+}
+
+/* Skeleton for Lectures Section */
+.course-lectures-container .skeleton-lecture {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 0;
+    margin-bottom: 10px;
+}
+
+.course-lectures-container .skeleton-lecture-icon {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+}
+
+.course-lectures-container .skeleton-lecture-title {
+    height: 16px;
+    width: 70%;
+}
+
+.course-lectures-container .skeleton-lecture-button {
+    height: 24px;
+    width: 80px;
+    border-radius: 8px;
+    margin-left: auto;
+}

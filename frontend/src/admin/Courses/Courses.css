@@ -1,0 +1,88 @@
+.courses-box {
+    margin: 20px;
+}
+
+.create-new-course-btn {
+    border: none;
+    background-color: black;
+    border-radius: 5px;
+    padding: 8px 15px;
+    cursor: pointer;
+    font-size: 14px;
+
+    & a {
+        text-decoration: none;
+        color: white;
+    }
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th,
+td {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.146);
+    text-align: left;
+    padding: 8px 0px;
+    font-size: 14px;
+}
+
+th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+button {
+    padding: 4px 10px;
+    font-size: 13px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.status-button {
+    background-color: #95d3ae;
+    color: green;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.edit-button {
+    background-color: white;
+    color: black;
+    border: 1px solid rgba(0, 0, 0, 0.199);
+    transition: all 0.2s;
+
+    &:hover {
+        background-color: black;
+        color: white;
+        transition: all 0.2s;
+    }
+}
+
+.draft-button {
+    background-color: black;
+    color: white;
+    cursor: auto;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+@media (max-width:750px) {
+    .courses-box {
+        overflow: scroll;
+        margin: 20px 0px;
+        width: 100%
+    }
+    td{
+        padding-right: 5px;
+    }
+}
+
+

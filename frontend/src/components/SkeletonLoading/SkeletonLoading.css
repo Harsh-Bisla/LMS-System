@@ -1,0 +1,90 @@
+/* General Skeleton Loading Style */
+.skeleton {
+    position: relative;
+    background: #e0e0e0;
+    overflow: hidden;
+    border-radius: 4px;
+}
+
+.skeleton::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.2));
+    animation: shimmer 1.5s infinite;
+}
+
+@keyframes shimmer {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+/* Course Skeleton Container */
+.course-skeleton {
+    max-width: 280px;
+    width: 100%;
+    height: 240px;
+    /* Adjusted height for the added image skeleton */
+    background-color: rgba(200, 200, 200, 0.3);
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Image Placeholder Skeleton */
+.image-placeholder {
+    width: 100%;
+    height: 140px;
+    /* Height for the image */
+    background-color: rgba(200, 200, 200, 0.3);
+    border-radius: 10px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+/* Title Skeleton */
+.title-skeleton {
+    width: 70%;
+    height: 20px;
+    background-color: rgba(200, 200, 200, 0.3);
+    margin: 10px 0;
+    border-radius: 5px;
+    position: relative;
+}
+
+/* Maker Info Skeleton */
+.maker-info-skeleton {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+/* Circular Skeleton for Image */
+.image-skeleton {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(200, 200, 200, 0.3);
+    position: relative;
+}
+
+/* Skeleton for Maker Name */
+.maker-name-skeleton {
+    width: 50%;
+    height: 15px;
+    background-color: rgba(200, 200, 200, 0.3);
+    border-radius: 5px;
+    position: relative;
+}
