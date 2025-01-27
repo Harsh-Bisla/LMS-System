@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useState } from 'react';
-import "./Courseprogress.css";
+import "./CourseProgress.css";
 import { FaRegPlayCircle } from "react-icons/fa";
 import { userContext } from '../../store/userContext';
 import { useParams } from 'react-router-dom';
