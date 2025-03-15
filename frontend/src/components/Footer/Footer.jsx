@@ -26,7 +26,7 @@ function Footer() {
                     </div>
                 </div>
             </div>
-            <p id='copyright'>Copyright 2024 © GreatStack. All Right Reserved.</p>
+            <p id='copyright'>Copyright 2024 © Harsh Bisla. All Right Reserved.</p>
         </section>
     )
 }
