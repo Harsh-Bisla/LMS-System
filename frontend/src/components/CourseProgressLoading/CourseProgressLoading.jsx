@@ -1,5 +1,5 @@
 import React from 'react';
-import "./CourseProgressLoading.css";
+import "./CourseprogressLoading.css";
 
 function CourseProgressLoading() {
     return (
