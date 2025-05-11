@@ -99,6 +99,7 @@ function UserProvider({ children }) {
                     })
                 })
         } catch (error) {
+            console.log(error)
             errorMsg(error.message);
         }
     }
@@ -155,6 +156,7 @@ function UserProvider({ children }) {
                     })
                 })
         } catch (error) {
+            console.log(error)
             errorMsg(error.message);
         }
     }
@@ -233,9 +235,10 @@ function UserProvider({ children }) {
 
     // init payment
     const initPayment = (order) => {
+        console.log(import.meta.env.VITE_KEY_ID)
         try {
             const options = {
-                key: import.meta.env.KEY_ID,
+                key: import.meta.env.VITE_KEY_ID,
                 amount: order.amount,
                 currency: order.currency,
                 description: "Course Payment",

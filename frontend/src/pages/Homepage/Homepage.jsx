@@ -49,7 +49,7 @@ function Homepage() {
 
           {/* SkeletonLoading */}
           {loading && Array.from({ length: 6 }, (_, index) => (
-            <SkeletonLoading />
+            <SkeletonLoading key={index} />
           ))}
         </div>
 
