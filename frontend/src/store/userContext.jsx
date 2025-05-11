@@ -235,7 +235,7 @@ function UserProvider({ children }) {
     const initPayment = (order) => {
         try {
             const options = {
-                key: import.meta.env.KEY_ID,
+                key: import.meta.env.VITE_KEY_ID,
                 amount: order.amount,
                 currency: order.currency,
                 description: "Course Payment",
