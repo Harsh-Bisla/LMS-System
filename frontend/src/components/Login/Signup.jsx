@@ -22,6 +22,13 @@ function Signup() {
         }))
     }
 
+    const handleKeyPress = (e)=>{
+        if(e.key === "Enter"){
+            signUp(signupDetails);
+        }
+    };
+
+
     useEffect(() => {
         window.scroll(0, 0)
     }, []);
@@ -58,7 +65,9 @@ function Signup() {
                     type="text"
                     placeholder='Full Name'
                     onChange={onchangehandler}
-                    id='name' />
+                    id='name'
+                    onKeyDown={handleKeyPress}
+                    />
 
                 <label htmlFor="email">Email</label>
                 <input
@@ -67,7 +76,9 @@ function Signup() {
                     name='email'
                     placeholder='Email'
                     onChange={onchangehandler}
-                    id='email' />
+                    id='email'
+                    onKeyDown={handleKeyPress}
+                    />
 
                 <label htmlFor="role">Role</label>
                 <select name='role' value={signupDetails.role} onChange={onchangehandler} id="role">

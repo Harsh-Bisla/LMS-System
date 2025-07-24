@@ -143,12 +143,14 @@ function UserProvider({ children }) {
     // get available courses
     const getAvailableCourses = () => {
         try {
+            setLoading(true);
             fetch(`${import.meta.env.VITE_BACKEND_URL}/course/get-all-courses`, {
                 headers: {
                     authorization: localStorage.getItem("token")
                 }
             })
                 .then((res) => {
+                    setLoading(false);
                     res.json().then((data) => {
                         if (data.success) {
                             setAllCourses(data.courses)
@@ -156,7 +158,6 @@ function UserProvider({ children }) {
                     })
                 })
         } catch (error) {
-            console.log(error)
             errorMsg(error.message);
         }
     }
